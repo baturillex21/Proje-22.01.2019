@@ -218,7 +218,27 @@ h1, h2, p, a, span{
 		height: 40px;
 	}
 
-
+.button1{
+	padding: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fffbfb;
+    padding: 10px;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -1054px;
+    position: absolute;
+    margin-left: 219px;
+    transition: all 0.3s ease-out;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -1030px;
+    position: absolute;
+    margin-left: 220px;
+    transition: all 0.3s ease-out;
+}
 /** MAIN CONTAINER **/
 
 .main-container {

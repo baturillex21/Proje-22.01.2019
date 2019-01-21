@@ -11,7 +11,7 @@
     
 </head>
 <body>
-    <body>
+    <body >
 
         <div class="main-container">
 
@@ -226,11 +226,18 @@
             </div> 
         </div> 
 
-        <div id="pencerekodu"><label for="pencere" class="dugme">
+        <div id="pencerekodu"><label for="pencere" class="dugme" href="#popup1">
             Yasaklı Üyeler
-            </label></textarea>
+            </label>
         </input><label class="pencere">
-          
+            <div id="popup2" class="overlay">
+                <div class="popup">
+                    
+                    <a class="close" href="#">&times;</a>
+                   
+                 
+                    
+                </div>
              <input type="text"  class="field2" id="field2">
             <label for="pencere" class="dugme" name="kapat">Kapat</label></label></div>
     </div>
@@ -254,7 +261,7 @@
     </div>
     <input type="text"class="banlandın" id="field1"><br>
     
-<button class="banlabutonu" onclick="myFunction()">Banla<br></button>
+<button class="banlabutonu" onclick="banlamak()">Banla<br></button>
 </div>
 
 
@@ -263,14 +270,18 @@
     
 <script>
  
- $(function(){
+ $(function banlamak(){
         $('#test').on('keyup',function(){
+            
             localStorage.setItem("input_degeri",$(this).val());
         }).val(localStorage.getItem("input_degeri"));
-       
+        
+
     });
-   function myFunction(){
-       document.getElementById('test').value = document.getElementById('field1').value
+   function banlamak(){
+       
+       localStorage.setItem("input_degeri",(this).val())
+       .val(localStorage.getItem("input_degeri"));
    }
     
     </script>
