@@ -55,9 +55,16 @@ function start() {
   sehirlerigoster2();
 }
 function login(params){
-    if(document.getElementById('exampleInputEmail1').value == document.getElementById('exampleInputEmail1').value){
-       alert("Başarılı Giriş Yaptınız");
-        window.location.href = "../Anasayfa.html";
-        
-    }
+    localStorage.getItem('kullaniciAdi',document.getElementById('AdiKutu').value);
+    localStorage.getItem('sifre',document.getElementById('SoyadiKutu').value);       
+    alert("Başarılı Giriş Yaptınız");
+    window.location.href = "../Anasayfa.html";
+}
+function uyeEkle(){
+    localStorage.setItem('kullaniciAdi',document.getElementById('AdiKutu').value);
+    localStorage.setItem('sifre',document.getElementById('SoyadiKutu').value);
+    alert("Başarılı kayıt oldunuz");
+    localStorage.setItem('KullaniciAdi/',document.getElementById('KullaniciAdiniz').value);
+    localStorage.setItem('DogumTarihi',document.getElementById('DogumTarihi').value);
+    
 }

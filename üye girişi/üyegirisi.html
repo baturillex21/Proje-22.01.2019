@@ -119,20 +119,20 @@
                 <button class="btn btn-primary kayıtolbutonu" onclick="login()">Giriş Yap</button>
 
 
-
+                
 
                 <form class="needs-validation kayıtol" novalidate>
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Adınız</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Adınızı yazınız"  required>
+      <input type="text" class="form-control" id="AdiKutu" placeholder="Adınızı yazınız"  required>
       <div class="valid-feedback">
         Başarılı
       </div>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationCustom02">Soyadınız</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Soyadınızı yazınız"  required>
+      <input type="text" class="form-control" id="SoyadiKutu" placeholder="Soyadınızı yazınız"  required>
       <div class="valid-feedback">
         Başarılı
       </div>
@@ -141,7 +141,7 @@
       <label for="validationCustomUsername">Kullanıcı adı</label>
       <div class="input-group">
         
-        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Kullanıcı adınızı yazınız" aria-describedby="inputGroupPrepend" required>
+        <input type="text" class="form-control" id="KullaniciAdiniz" placeholder="Kullanıcı adınızı yazınız" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
           Lütfen uygun bir kullanıcı adı giriniz.
         </div>
@@ -174,7 +174,7 @@
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom05">Doğum Tarihi</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Doğum Tarihi" required>
+      <input type="text" class="form-control" id="DogumTarihi" placeholder="Doğum Tarihi" required>
       <div class="invalid-feedback">
         Doğum tarihinizi yazınız
       </div>
@@ -187,7 +187,7 @@
       
     </div>
   </div>
-  <button class="btn btn-primary kayıtolbutonu"  onclick=""type="submit">Kayıt Ol</button>
+  <button class="btn btn-primary kayıtolbutonu"  onclick="uyeEkle() "type="submit">Kayıt Ol</button>
 </form>
 
 
